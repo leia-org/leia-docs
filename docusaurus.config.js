@@ -8,10 +8,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-/** @type {import('@docusaurus/types').Config} */
+ /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'LEIA Docs',
+  tagline: 'Documentación de LEIA',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -19,23 +19,20 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Production URL of your site
+  url: 'https://leia-org.github.io',
+  // For project pages on GitHub, baseUrl must be '/<repo>/'
+  baseUrl: '/leia-docs/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'leia-org', // GitHub org name
+  projectName: 'leia-docs',     // Repo name
+  deploymentBranch: 'gh-pages', // Branch used by Pages
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // i18n (ajústalo si quieres usar 'es')
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -48,10 +45,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Enlaces "Edit this page" apuntando a tu repo
+          editUrl: 'https://github.com/leia-org/leia-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -59,11 +54,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/leia-org/leia-docs/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -78,12 +69,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'LEIA Docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'LEIA Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -91,11 +81,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/leia-org/leia-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -108,7 +98,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting Started',
                 to: '/docs/intro',
               },
             ],
@@ -116,35 +106,20 @@ const config = {
           {
             title: 'Community',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
+              { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
+              { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
+              { label: 'X', href: 'https://x.com/docusaurus' },
             ],
           },
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              { label: 'Blog', to: '/blog' },
+              { label: 'GitHub', href: 'https://github.com/leia-org/leia-docs' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LEIA.`,
       },
       prism: {
         theme: prismThemes.github,
