@@ -6,7 +6,7 @@ This is the official repository of the **LEIA Project documentation and website*
 
 ## 📖 About LEIA
 
-**LEIA** is a project focused on AI-assited learning.
+**LEIA** is a project focused on AI-assisted learning.
 This website serves as the main hub for documentation, resources, and community updates.
 
 ---
