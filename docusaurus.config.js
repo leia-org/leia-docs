@@ -20,9 +20,9 @@ const config = {
   },
 
   // Production URL of your site
-  url: 'https://leia-org.github.io',
+  url: 'https://leia.ovh',
   // For project pages on GitHub, baseUrl must be '/<repo>/'
-  baseUrl: '/leia-docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'leia-org', // GitHub org name
