@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -15,6 +21,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -28,3 +35,163 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-600 font-medium py-3 px-6 rounded-lg border border-primary-600 transition-colors duration-200;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Modern navbar styles */
+.navbar {
+  background: transparent !important;
+  border-bottom: none !important;
+  padding: 0 !important;
+}
+
+.navbar__brand {
+  margin: 0 !important;
+}
+
+.navbar__title {
+  font-weight: 600;
+  color: #000;
+}
+
+.navbar__link {
+  color: #6b7280 !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: #000 !important;
+  text-decoration: none !important;
+  background-color: rgba(243, 244, 246, 1);
+}
+
+.navbar__item--mobile .navbar__link {
+  color: #6b7280 !important;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.75rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.navbar__item--mobile .navbar__link:hover {
+  color: #000 !important;
+  background-color: transparent;
+}
+
+.navbar__item {
+  margin: 0;
+}
+
+/* Hide default navbar items in favor of modern design */
+.navbar__inner {
+  display: none;
+}
+
+/* Color mode toggle styling */
+.colorModeToggle_DECltU,
+[class*="colorModeToggle"] {
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem !important;
+  border-radius: 9999px !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(229, 231, 235, 1) !important;
+  transition: all 0.2s ease !important;
+}
+
+.colorModeToggle_DECltU:hover,
+[class*="colorModeToggle"]:hover {
+  background-color: rgba(243, 244, 246, 1) !important;
+  border-color: rgba(209, 213, 219, 1) !important;
+}
+
+/* Mobile sidebar backdrop */
+.navbar-sidebar__backdrop {
+  display: none;
+}
+
+/* Modern button styles */
+.modern-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(229, 231, 235, 1);
+  box-shadow: 0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.modern-button:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0 32px rgba(34, 42, 53, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: #000000;
+}
+
+.modern-button--dark {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.modern-button--dark:hover {
+  color: #ffffff;
+}
+
+.modern-hamburger {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(229, 231, 235, 1);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  cursor: pointer;
+}
+
+.modern-hamburger:hover {
+  background-color: rgba(243, 244, 246, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom footer is now used globally */

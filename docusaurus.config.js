@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
  /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'LEIA Docs',
-  tagline: 'Documentación de LEIA',
-  favicon: 'img/favicon.ico',
+  title: 'LEIA',
+  tagline: 'Create your Custom AI Assistant',
+  favicon: 'img/LEIALogo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -71,10 +71,10 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'LEIA Docs',
+        title: 'LEIA',
         logo: {
           alt: 'LEIA Logo',
-          src: 'img/logo.svg',
+          src: 'img/LEIALogo.png',
         },
         items: [
           {
