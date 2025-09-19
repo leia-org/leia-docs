@@ -11,12 +11,12 @@ const Hero: React.FC = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl md:text-7xl font-semibold text-black leading-[1.1] tracking-tight">
-                Create your Custom
-                <span className="text-gray-600 block">AI Assistant</span>
+                Learn <span className="text-primary">with</span> AI
+                <span className="text-gray-600 block">not from AI</span>
               </h1>
               <div className="max-w-2xl mx-auto">
                 <ScrollRevealParagraph 
-                  paragraph="LEIA allows you to create unique artificial intelligence assistants that understand exactly what you need. Customize personality, behavior, and purpose to have the perfect assistant for you."
+                  paragraph="LEIA (Learning Enabling Intelligent Assistant) boost the learning process with immersive experiences."
                   className="text-xl text-gray-500"
                 />
               </div>
@@ -36,21 +36,6 @@ const Hero: React.FC = () => {
               </button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="text-2xl font-semibold text-black">3</div>
-                <div className="text-sm text-gray-500">Simple Steps</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-semibold text-black">∞</div>
-                <div className="text-sm text-gray-500">Customizations</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-semibold text-black">24/7</div>
-                <div className="text-sm text-gray-500">Available</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

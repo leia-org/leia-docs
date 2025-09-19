@@ -9,8 +9,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Create your Custom AI Assistant`}
-      description="LEIA allows you to create unique artificial intelligence assistants that understand exactly what you need. Customize personality, behavior, and purpose to have the perfect assistant for you."
+      title={`${siteConfig.title} - Immersive learning experience`}
+      description="LEIA (Learning Enabling Intelligent Assistant) boost the learning process with immersive experiences."
       wrapperClassName="homepage"
     >
       <div className="min-h-screen bg-white">
