@@ -23,7 +23,8 @@ const Hero: React.FC = () => {
             </div>
 
             {/* CTA Buttons */}
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* 
               <a 
                 href="/docs/intro" 
                 className="modern-button modern-button--dark px-8 py-4 flex items-center justify-center gap-2 no-underline hover:no-underline"
