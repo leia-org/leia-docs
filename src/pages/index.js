@@ -16,8 +16,10 @@ export default function Home() {
       <div className="min-h-screen bg-white">
         <main>
           <Hero />
-          <Features />
+          {/* 
+          <Features /> 
           <About />
+          */}
         </main>
       </div>
     </Layout>

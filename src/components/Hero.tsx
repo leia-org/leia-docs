@@ -16,22 +16,23 @@ const Hero: React.FC = () => {
               </h1>
               <div className="max-w-2xl mx-auto">
                 <ScrollRevealParagraph 
-                  paragraph="LEIA (Learning Enabling Intelligent Assistant) boost the learning process with immersive experiences."
+                  paragraph="Boost the learning process with immersive experiences."
                   className="text-xl text-gray-500"
                 />
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="/docs/intro" 
                 className="modern-button modern-button--dark px-8 py-4 flex items-center justify-center gap-2 no-underline hover:no-underline"
               >
                 Get Started Now
                 <ArrowRight size={20} />
-              </a>
-              <button className="modern-button px-8 py-4">
+              </a>-->*/}
+
+              <button className="modern-button px-8 py-4" onClick={() => window.open('https://workbench.leia.ovh/?email=_test_webd&code=RMEWO1XRAK73U2YC4', '_blank')}>
                 View Demo
               </button>
             </div>
