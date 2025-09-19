@@ -15,10 +15,11 @@ const Hero: React.FC = () => {
                 <span className="text-gray-600 block">not from AI</span>
               </h1>
               <div className="max-w-2xl mx-auto">
-                <ScrollRevealParagraph 
+                Boost the learning process with immersive experiences.
+                {/* <ScrollRevealParagraph 
                   paragraph="Boost the learning process with immersive experiences."
                   className="text-xl text-gray-500"
-                />
+                />*/}
               </div>
             </div>
 
