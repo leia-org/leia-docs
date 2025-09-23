@@ -54,10 +54,14 @@ From the listing instructors can create new LEIAs using one of the elements in t
 ![LEIAs creation](./img/LEIA-designer-LEIA-DesignFromThis.png)
 In the LEIA creation interface users can define:
    1. Instructors choose from an existing proces, problem and persona.
-![LEIAs creation](./img/LEIA-designer-Step1.png)
+![LEIAs component selection](./img/LEIA-designer-Step1.png)
    3. [Optional] Instructors customize the problem or/and the persona.
-   4. [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
-   5. Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
+![LEIAs customization](./img/LEIA-designer-Step2.png)
+   5. [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
+![LEIAs testing](./img/LEIA-designer-LeiaTesting.png)
+   7. Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
+![LEIAs customization](./img/LEIA-designer-Step3.png)
+
 
 ### Experiment configuration
 
