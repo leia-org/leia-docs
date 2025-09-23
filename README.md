@@ -1,4 +1,4 @@
-# 🌌 LEIA Project - Documentation Website
+# 🌌 LEIA Project - Website
 
 This is the official repository of the **LEIA Project documentation and website**, built with [Docusaurus](https://docusaurus.io/).
 
