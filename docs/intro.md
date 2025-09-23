@@ -12,20 +12,24 @@ LEIA (Learning with an Educational Intelligent Assistant) is a platform that ena
 
 The general workflow of LEIA follows four main steps:
 
-1. **Instructor configures an experiment**  
+1 ** Instructor designs the LEIA **
+   - Chooses a process/behaviour (currently, either a conversational game, information requirements elicitacion, or process requirements elicitation).
+   - Defines the problem (including the expected solution).
+   - Chooses or customizes the persona whith which students will interact. Including personality traits.  
+2. **Instructor configures an experiment**  
    - Defines the scenario (conditioning of LEIA).  
    - Adjusts operational parameters (time limits, replicable sessions, etc.).  
    - (Optional) Provides an auto-grader for automated evaluation.  
 
-2. **Students access the activity**  
+3. **Students access the activity**  
    - Each student/group receives their own dedicated session.  
    - The instructor specifies if the activity must be completed in a single session or across multiple ones.  
 
-3. **Submission and evaluation**  
+4. **Submission and evaluation**  
    - Students upload their work product (e.g., UML diagrams in Mermaid syntax).  
    - The work is evaluated either by an auto-grader or manually.  
 
-4. **Review of results**  
+5. **Review of results**  
    - The instructor can download session data (CSV/JSON), including:  
      - Full conversation transcripts  
      - Student submissions  
@@ -40,12 +44,19 @@ The general workflow of LEIA follows four main steps:
 
 ## 2. Instructor Experience
 
+### LEIA creation/design:
+
+1.- Instructors choose from an exsisting proces, problem and persona.
+2.- [Optional] Instructors customize the problem or/and the persona.
+3.- [Optional] Instructors can test de LEIA and interact with the chat to
+4.- Instructors confirm the status and save the LEIA either as public or private.
+
 ### Experiment configuration
 
 Instructors define:
 
 - **Content:**  
-  - Scenario for LEIA (e.g., a simulated client interview).  
+  - Scenario for LEIA (e.g., a simulated client interview, process discovery interview, or conversational game).  
   - How students should submit their solutions.  
   - Whether to use an auto-grader or manual evaluation.  
 
