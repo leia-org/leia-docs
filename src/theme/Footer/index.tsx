@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="contact@leia.ovh"
+                placeholder="team@leia.ovh"
                 className="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white placeholder-gray-400 border border-gray-700 focus:border-gray-500 focus:outline-none"
               />
               <button className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
