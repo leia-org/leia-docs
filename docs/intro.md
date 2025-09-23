@@ -12,7 +12,7 @@ LEIA (Learning with an Educational Intelligent Assistant) is a platform that ena
 
 The general workflow of LEIA follows four main steps:
 
-1 ** Instructor designs the LEIA **
+1 **Instructor designs the LEIA**
    - Chooses a process/behaviour (currently, either a conversational game, information requirements elicitacion, or process requirements elicitation).
    - Defines the problem (including the expected solution).
    - Chooses or customizes the persona whith which students will interact. Including personality traits.  
