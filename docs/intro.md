@@ -47,13 +47,17 @@ The general workflow of LEIA follows four main steps:
 ### LEIA creation/design:
 Instructors do this task  using the [LEIA Designer](http://designer.leia.ovh/). Using this application instructors can view a listing of existing LEIAS:
 
+![LEIAs listing](./img/LEIA-designer-LEIA-listing.png)
 
+From the listing instructors can create new LEIAs using one of the elements in the listing as starting point:
 
-From the listing instructors can create new LEIAs using one of the elements in the listing as starting point and define:
-   1. Instructors choose from an exsisting proces, problem and persona.
-   2. [Optional] Instructors customize the problem or/and the persona.
-   3. [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
-   4. Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
+![LEIAs creation](./img/LEIA-designer-LEIA-DesignFromThis.png)
+In the LEIA creation interface users can define:
+   1. Instructors choose from an existing proces, problem and persona.
+![LEIAs creation](./img/LEIA-designer-Step1.png)
+   3. [Optional] Instructors customize the problem or/and the persona.
+   4. [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
+   5. Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
 
 ### Experiment configuration
 
