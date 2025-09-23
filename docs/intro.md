@@ -2,46 +2,113 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# How to Use LEIA
 
-Let's discover **Docusaurus in less than 5 minutes**.
+LEIA (Learning with an Educational Intelligent Assistant) is a platform that enables instructors to design interactive simulations and students to practice in realistic scenarios with AI support.  
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+## 1. General Workflow
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The general workflow of LEIA follows four main steps:
 
-### What you'll need
+1. **Instructor configures an experiment**  
+   - Defines the scenario (conditioning of LEIA).  
+   - Adjusts operational parameters (time limits, replicable sessions, etc.).  
+   - (Optional) Provides an auto-grader for automated evaluation.  
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+2. **Students access the activity**  
+   - Each student/group receives their own dedicated session.  
+   - The instructor specifies if the activity must be completed in a single session or across multiple ones.  
 
-## Generate a new site
+3. **Submission and evaluation**  
+   - Students upload their work product (e.g., UML diagrams in Mermaid syntax).  
+   - The work is evaluated either by an auto-grader or manually.  
 
-Generate a new Docusaurus site using the **classic template**.
+4. **Review of results**  
+   - The instructor can download session data (CSV/JSON), including:  
+     - Full conversation transcripts  
+     - Student submissions  
+     - Metadata and timestamps  
+   - This supports grading, detailed analysis, or research studies.
 
-The classic template will automatically be added to your project after you run the command:
+### Workflow Diagram
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+![Worflow Diagram](./img/workflow.svg)
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+---
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## 2. Instructor Experience
 
-## Start your site
+### Experiment configuration
 
-Run the development server:
+Instructors define:
 
-```bash
-cd my-website
-npm run start
-```
+- **Content:**  
+  - Scenario for LEIA (e.g., a simulated client interview).  
+  - How students should submit their solutions.  
+  - Whether to use an auto-grader or manual evaluation.  
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+- **Operational parameters:**  
+  - Time limits.  
+  - Replicable sessions with unique codes.  
+  - Selection of the LLM provider.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+![Excercises Listing Interface](./img/ExercisesListingInterface.png)
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+---
+
+### Workbench dashboard
+
+The instructor dashboard allows:  
+
+- Viewing all instantiated sessions.  
+- Inspecting a specific session's details:  
+  - Metadata  
+  - LEIA configuration  
+  - Submission and evaluation settings  
+
+![Exercise Details Interface](./img/ExerciseDetailsInterface.png)
+---
+
+## 3. Student Experience
+
+### Access
+
+Students log in using:  
+
+- **Email address**, or  
+- **System-provided code** (to ensure anonymity if required).  
+
+![Student Login](./img/st_login_1.webp)
+---
+
+### Interaction with LEIA
+
+- Students initiate a chat session with the assistant.  
+- They can ask clarifying questions, gather requirements, and iteratively refine their understanding.  
+- If the session is replicable, they can leave and resume it later.  
+
+![Student Chat](./img/st_chat_1.webp)
+
+
+---
+
+### Submissions and Feedback
+
+- Students submit their solution (e.g., UML diagram in Mermaid syntax).  
+- If enabled, the **auto-grader** provides immediate feedback:  
+  - Highlights missing elements or errors.  
+  - Suggests improvements.  
+  - Allows students to re-enter the session and refine their work.  
+
+![Student Evaluation](./img/st_eval.webp)
+
+---
+
+## 4. Use Cases
+
+- **Requirements Elicitation training:** simulate client interviews and model requirements with UML.  
+- **Educational simulations:** role-play consulting scenarios or analysis meetings.  
+- **Iterative activities:** allow multiple sessions with feedback loops.

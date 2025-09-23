@@ -26,14 +26,14 @@ function useNavbarItems() {
   return useThemeConfig().navbar.items as NavbarItemConfig[];
 }
 
-function ModernNavbarItems({items, className}: {items: NavbarItemConfig[], className?: string}): ReactNode {
+function ModernNavbarItems({items, className, layoutId}: {items: NavbarItemConfig[], className?: string, layoutId?: string}): ReactNode {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={clsx(
-        'absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-16',
+        'flex flex-row items-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:space-x-4',
         className
       )}>
       {items.map((item, idx) => (
@@ -43,7 +43,7 @@ function ModernNavbarItems({items, className}: {items: NavbarItemConfig[], class
           className="relative px-4 py-2 text-neutral-600">
           {hovered === idx && (
             <motion.div
-              layoutId="hovered"
+              layoutId={layoutId || "hovered"}
               className="absolute inset-0 h-full w-full rounded-full bg-gray-100" />
           )}
           <div className="relative z-20">
@@ -90,12 +90,12 @@ function DesktopNavbar({visible}: {visible?: boolean}): ReactNode {
         backdropFilter: "blur(10px)"
       }}
       className={clsx(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex bg-white/80"
+        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-1 lg:flex bg-white/80"
       )}>
       <NavbarLogo />
-      <ModernNavbarItems items={leftItems} />
+      <ModernNavbarItems items={leftItems} layoutId="left-navbar" />
       <div className="flex items-center space-x-4">
-        <ModernNavbarItems items={rightItems} />
+        <ModernNavbarItems items={rightItems} layoutId="right-navbar" />
         <NavbarColorModeToggle className={styles.colorModeToggle} />
         <ModernButton href="/docs/intro" variant="dark">
           Get Started
@@ -137,7 +137,7 @@ function MobileNavbar({visible}: {visible?: boolean}): ReactNode {
         damping: 50,
       }}
       className={clsx(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2.5 lg:hidden",
         visible && "bg-white/80"
       )}>
       {/* Mobile Header */}
