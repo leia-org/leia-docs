@@ -46,10 +46,10 @@ The general workflow of LEIA follows four main steps:
 
 ### LEIA creation/design:
 Instructors define
-1.- Instructors choose from an exsisting proces, problem and persona.
-2.- [Optional] Instructors customize the problem or/and the persona.
-3.- [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
-4.- Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
+   1. Instructors choose from an exsisting proces, problem and persona.
+   2. [Optional] Instructors customize the problem or/and the persona.
+   3. [Optional] Instructors can test de LEIA and interact with the chat to check the behaviour
+   4. Instructors confirm the status and save the LEIA as private, and can ask admins (by e-mail) to make it public (after a review process).
 
 ### Experiment configuration
 
